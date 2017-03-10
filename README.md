@@ -4,7 +4,7 @@
 
 1. Clone this repository to your computer.
 
-2. Run `node server.js` from the repository directory to run the server.
+2. Run `node server.js` from the repository directory to start the server.
 
 ### Description
 
