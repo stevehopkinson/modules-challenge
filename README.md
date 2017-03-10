@@ -12,7 +12,7 @@ This repository contains a simple Node.js server, with all of its code in a sing
 
 ## Bonus task
 
-Congratulations if you've got this far! As a bonus task, try to create an extra route for the server, with its own tests.
+Congratulations if you've got this far! As a bonus task, try to create an extra route for the server, with its own handler and tests.
 
 ## Gotchas
 
