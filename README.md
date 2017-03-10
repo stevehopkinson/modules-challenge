@@ -1,5 +1,13 @@
 # Morning challenge: Modularise a simple Node.js server
 
+## Setup
+
+1. Clone this repository to your computer.
+
+2. Run `node server.js` from the repository directory to run the server.
+
+### Description
+
 This repository contains a simple Node.js server, with all of its code in a single file - `server.js`. If we want to be able to scale up our application, we'll want to separate each aspect of the server into its own file. Your challenge is to modularise the server into separate files, each of which performs a specific role.
 
 1. Currently, the code that starts the server (`server.listen()`) is in the same file as the code that configures our server logic, which is bad for a few reasons – not least because it'll add a lot of pain when we want to separate out our tests. Move that line into a new file called `index.js`, and require in the server object from `server.js`.
