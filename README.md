@@ -30,4 +30,4 @@ Congratulations if you've got this far! As a bonus task, try to create an extra 
 
 2. You can only export *one variable* from each module, but that variable can be an object. If you want to move several related functions into a new module, add them as methods on a single object and export that object. 
 
-3. You shouldn't be changing any of the *functionality* of the app – just moving the existing code into new files and updating variables names where necessary. If you find yourself
+3. You shouldn't be changing any of the *functionality* of the app – just moving the existing code into new files and updating variables names where necessary. If you find yourself rewriting large chunks of the code logic, something's probably gone wrong.
