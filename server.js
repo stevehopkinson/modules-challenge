@@ -72,5 +72,4 @@ responsesRemaining++;
 // If all responses return without errors, print a success message
 const endTests = () => {
     console.log('All tests passed');
-    process.exit();
 };
