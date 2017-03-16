@@ -16,7 +16,7 @@ Don't worry if you don't complete all four steps – it's not a race. It's more 
 
 2. All of the tests are in our main server file, too, which is far from ideal – we don't necessarily want to run our tests every time we start our server. Create a new JavaScript file that contains the tests and can be run independently of the main server – again, you'll have to require in the server object from `server.js`. 
 
-3. The code that handles our requests (`res.writeHead` and `res.end`) is currently written directly into the function that creates the server. As our application logic gets more complex and we add more 'routes', that's going to make our code very difficult to maintain. Wrap the two blocks of handler code in their own functions and move them into their own module, called 'handlers.js'.
+3. The code that handles our requests (`res.writeHead` and `res.end`) is currently written directly into the function that creates the server. As our application logic gets more complex and we add more 'routes', that's going to make our code very difficult to maintain. Wrap each pair of `res.writeHead`/`res.end` function calls into its own function, and move them into their own module, called 'handlers.js'.
 
 4. Depending on how you've completed the previous steps, the code that 'routes' requests by their URL will either be part of your main server file, or part of your handlers files. It's often a good idea for routing to happen in its own module, to keep it separate from our basic server setup and the logic in our handlers. Move the routing logic (the `if/else` statements that check `req.url`) into its own file, passing requests to the correct handler function. 
 
